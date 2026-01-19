@@ -1,0 +1,13 @@
+import streamlit as st
+
+st.set_page_config(page_title="Anlageklassen-Filter", layout="wide")
+st.title("Anlageklassen-Filter-Tool")
+st.write("Erste Version: UI steht, Daten kommen als naechstes.")
+
+asset_class = st.selectbox(
+    "Anlageklasse",
+    ["Aktien", "ETFs", "Anleihen", "Rohstoffe", "Immobilien"],
+)
+st.write("Du hast gewaehlt:", asset_class)
+
+
